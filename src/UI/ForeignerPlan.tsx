@@ -29,7 +29,7 @@ const ForeignerPlan: React.FC = () => {
 
     return (
         <div className="mt-12 lg:grid lg:grid-cols-plan xl:justify-center lg:overflow-x-scroll xl:overflow-clip">
-            <div className="grid_foreigner_plan pb-8 lg:pb-0">
+            <div className="grid_foreigner_plan pricing_table_foreigner pb-8 lg:pb-0">
                 <div className="flex flex-col items-center lg:block lg:pr-20">
                     <Buttons type="foreigner" />
                     <ClassesInfo heading="Class Duration">
