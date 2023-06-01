@@ -21,14 +21,7 @@
     }
 }
 
-.pricing_tables {
-    @media screen and (min-width: 1215px) {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.grid_foreigner_plan {
+.grid_foreigner_plan.pricing_table_foreigner {
     @media screen and (min-width: 976px) {
         display: grid;
         grid-template-rows: 270px 336px 75px;
@@ -41,4 +34,11 @@ select:focus {
 
 select {
     cursor: pointer;
+}
+
+.pricing_tables {
+    @media screen and (min-width: 1215px) {
+        display: flex;
+        justify-content: center;
+    }
 }
