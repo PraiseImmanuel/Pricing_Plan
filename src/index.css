@@ -30,6 +30,7 @@
 
 .grid_foreigner_plan {
     @media screen and (min-width: 976px) {
+        display: grid;
         grid-template-rows: 270px 336px 75px;
     }
 }
