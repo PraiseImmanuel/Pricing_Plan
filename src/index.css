@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page_wrapper {
+    min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pricing_table {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    min-width: 15rem;
+
+    @media screen and (min-width: 976px) {
+        min-width: 12rem;
+    }
+}
+
+.pricing_table_foreigner {
+    @media screen and (max-width: 976px) {
+        min-height: 40rem;
+    }
+}
+
+.pricing_tables {
+    @media screen and (min-width: 1215px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.grid_foreigner_plan {
+    @media screen and (min-width: 976px) {
+        display: grid;
+        grid-template-rows: 270px 336px 75px;
+    }
+}
+
+select:focus {
+    outline: none;
 }
